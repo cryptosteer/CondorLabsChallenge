@@ -28,7 +28,7 @@ Installing packages from project root folder /CondorLabsChallenge.
 npm install
 ```
 
-## Using the application
+## How to use it
 
 To start the server run this command from project root folder /CondorLabsChallenge.
 
@@ -36,11 +36,11 @@ To start the server run this command from project root folder /CondorLabsChallen
 npm run start
 ```
 
-### Using frontend
+### Using the frontend
 
 Please access to this link: http://localhost:3000/frontend/
 
-### Using backend api
+### Using the backend api
 
 **List all providers**
 ```
