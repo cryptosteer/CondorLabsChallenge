@@ -2,11 +2,11 @@
 
 This test has two parts, both served by the same Node Instance, but they are not related. 
 
-## Frontend test
+### Frontend test
 
 Create a finding course page, with the basic search functionality and pagination. You choose the way and approach for the pagination.
 
-## Backend test
+### Backend test
 
 Build an API REST and expose a CRUD for the providers collection.
 
