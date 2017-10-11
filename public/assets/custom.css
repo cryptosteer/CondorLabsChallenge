@@ -55,7 +55,6 @@ a, a:hover{
 #header .navbar .container ul li.divider{
     display: inline-block;
     font-family: FontAwesome;
-    font-size: .3em;
     color: #9a9a9d;
     width: 10px;
     padding-top: 11px;
@@ -140,4 +139,103 @@ a, a:hover{
 
 .bg-light{
     background-color: #ecf1f4;
+}
+
+.course-list .list-total-title span{
+    color: #3aba91;
+    font-weight: 700;
+}
+
+.list-total-title{
+    color: #999;
+    font-size: 21px;
+    margin: 23px 0 33px;
+}
+
+.thumbnail.thumbnail-body.anytime {
+    height: 150px!important;
+}
+
+.thumbnail .thumbnail-body {
+    height: auto!important;
+    padding: 20px 20px 0;
+}
+
+.thumbnail .thumbnail-title {
+    font-weight: 600;
+    color: #555959;
+    margin-bottom: 10px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.thumbnail.thumbnail-course .avatar a {
+}
+
+.avatar {
+    padding-right: 10px;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    margin-bottom: 30px;
+}
+
+.avatar span{
+    color: #9da9a8;
+    font-weight: 400;
+    white-space: nowrap;
+}
+.avatar a.ellipsis {
+    padding-right: 10px;
+}
+
+.ellipsis, .vertical-ellipsis {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.thumbnail hr {
+    margin-bottom: 20px!important;
+    margin-left: 20px;
+    margin-right: 20px!important;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.thumbnail .thumbnail-footer .label-success {
+    background: #3aba91;
+}
+
+.thumbnail .thumbnail-footer .label {
+    display: inline;
+    padding: .2em .6em .3em!important;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.thumbnail .thumbnail-footer .price-info {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.thumbnail .thumbnail-footer {
+    padding-bottom: 21px;
+    padding-left: 20px;
+}
+
+.featured-image {
+    overflow: hidden;
+    height: 209px;
+}
+
+.featured-content {
+    padding-left: 0px;
 }
