@@ -44,21 +44,21 @@ Please access to this link: http://localhost:3000/frontend/
 
 **List all providers**
 ```
-GET /providers HTTP/1.1
+GET /backend/providers HTTP/1.1
 Host: localhost:3000
 Cache-Control: no-cache
 ```
 
 **Get provider**
 ```
-GET /providers/59dd33286922125a97e1740a HTTP/1.1
+GET /backend/providers/59dd33286922125a97e1740a HTTP/1.1
 Host: localhost:3000
 Cache-Control: no-cache
 ```
 
 **Create provider**
 ```
-POST /providers HTTP/1.1
+POST /backend/providers HTTP/1.1
 Host: localhost:3000
 Content-Type: application/x-www-form-urlencoded
 Cache-Control: no-cache
@@ -68,7 +68,7 @@ firstName=Jesus&lastName=Steer&middleName=D&email=Wilhelm_Waelchi31%40hotmail.co
 
 **Delete provider**
 ```
-DELETE /providers/59dd30f07d87765850d0b42d HTTP/1.1
+DELETE /backend/providers/59dd30f07d87765850d0b42d HTTP/1.1
 Host: localhost:3000
 Cache-Control: no-cache
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
@@ -76,7 +76,7 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0g
 
 **Update provider**
 ```
-PUT /providers/59dd33286922125a97e1740a HTTP/1.1
+PUT /backend/providers/59dd33286922125a97e1740a HTTP/1.1
 Host: localhost:3000
 Content-Type: application/x-www-form-urlencoded
 Cache-Control: no-cache
