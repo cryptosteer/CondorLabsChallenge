@@ -42,6 +42,8 @@ Please access to this link: http://localhost:3000/frontend/
 
 ### Using the backend api
 
+Please follow this examples and make your own requests.
+
 **List all providers**
 ```
 GET /backend/providers HTTP/1.1
