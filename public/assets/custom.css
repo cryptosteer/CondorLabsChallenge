@@ -141,6 +141,10 @@ a, a:hover{
     background-color: #ecf1f4;
 }
 
+.course-list{
+    margin-bottom: 50px;
+}
+
 .course-list .list-total-title span{
     color: #3aba91;
     font-weight: 700;
@@ -238,4 +242,9 @@ a, a:hover{
 
 .featured-content {
     padding-left: 0px;
+}
+
+#pagination {
+    text-align: center;
+    margin-top: 15px;
 }

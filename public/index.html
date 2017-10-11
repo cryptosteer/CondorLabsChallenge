@@ -45,8 +45,8 @@
                 <div class="container">
                     <h2>Course Search</h2>
                     <div class="search-form">
-                        <form>
-                            <div class="autocomplete "><div class="autocomplete-input input-group input-group-lg"><input type="text" id="term-input" autocomplete="off" class="form-control" placeholder="Search courses and providers..." value=""><span class="input-group-btn "><button class="btn btn-success" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button></span></div><div class="autocomplete-items has-button" style="display:none;"><ul></ul></div></div>
+                        <form onsubmit="return false;">
+                            <div class="autocomplete "><div class="autocomplete-input input-group input-group-lg"><input type="text" id="term-input" autocomplete="off" class="form-control" placeholder="Search courses and providers..." value=""><span class="input-group-btn "><a href="javascript:void(0)" id="term-button" class="btn btn-success"><i class="fa fa-search" aria-hidden="true"></i></a></span></div><div class="autocomplete-items has-button" style="display:none;"><ul></ul></div></div>
                         </form>
                     </div>
                     <div>
@@ -87,6 +87,12 @@
                                     </div>
                                     <div id="courses-results" class="row">
 
+                                    </div>
+                                    <div id="pagination" class="row">
+                                        <div class="col-md-12">
+                                            <a href="javascript:void(0)" id="prev-pag" class="btn btn-success">Previus</a>
+                                            <a href="javascript:void(0)" id="next-pag" class="btn btn-success">Next</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

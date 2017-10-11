@@ -1,3 +1,5 @@
+var pageIndex = 1;
+
 $(function () {
     $.ajax({
         type: "GET",
@@ -56,14 +58,49 @@ $(function () {
         }
     });
 
+    searchCourses();
+
+    $("#term-button").on("click", function() {
+        searchCourses();
+    });
+
+    $("#term-input").on('change', function() {
+        searchCourses();
+    });
+
+    $("#prev-pag").on("click", function() {
+        if(pageIndex>1){
+            pageIndex -= 1;
+            searchCourses();
+        }
+    });
+
+    $("#next-pag").on("click", function() {
+        pageIndex += 1;
+        searchCourses();
+    });
+});
+
+function searchCourses(){
+    $("#pagination").hide();
+    $('#courses-results').html("Searching...");
+    $('#totalItems').html("?");
+    termInput = $("#term-input").val();
+    var url = "https://api.cebroker.com/v2/search/courses/?expand=totalItems&pageIndex=" + pageIndex + "&pageSize=18&sortField=RELEVANCE&profession=36&courseType=CD_ANYTIME&sortShufflingSeed=27";
+    termInput = termInput.trim();
+    if(termInput != ""){
+        url = url.replace(/ /g, '%20');
+        url = url+"&courseName="+termInput
+    }
     $.ajax({
         type: "GET",
         dataType: "json",
-        url: "https://api.cebroker.com/v2/search/courses/?expand=totalItems&pageIndex=1&pageSize=18&sortField=RELEVANCE&profession=36&courseType=CD_ANYTIME&sortShufflingSeed=27",
+        url: url,
         data: "DATA",
         success: function (response) {
+            $("#pagination").show();
             $("#totalItems").html(response.totalItems);
-
+            $('#courses-results').html("");
             $.each(response.items, function(index, item){
                 var name = item.course.name;
                 var provider = item.course.provider.name;
@@ -110,4 +147,4 @@ $(function () {
             alert('failure: ' + response.responseText);
         }
     });
-});
+}
